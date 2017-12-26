@@ -16,7 +16,7 @@ const isDev = NODE_ENV === 'development';
 module.exports = {
 	name,
 
-	port: isRemoteServer ? +PORT : +DEV_PORT,
+	port: +PORT,
 	baseDir: isDev ? 'src/server' : 'lib/server',
 	daemon: !isDev,
 	inspect: isDev,
